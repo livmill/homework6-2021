@@ -54,3 +54,21 @@ header {
     align-items: center;
     flex-wrap:wrap
 }
+
+@media screen and (min-width: 850px){
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        flex-basis: 250px;
+
+    }
+}
