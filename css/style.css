@@ -1,5 +1,5 @@
 body {
-    font-family: "Alegreya Sans SC", serif;
+    font-family: 'Alegreya Sans', serif;
     background-color: #f1f1f1;
     background-image: url("../images/concrete_seamless.png");
 }
@@ -19,18 +19,19 @@ header {
 }
 
 .card > header {
+
     display: flex;
+    flex-basis:0;
     background-color: #288088;
     border: 2px solid #45ADAD;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0px 20px 0px;
     border-radius: 7px 7px 0px 0px;
 } 
 
 .pricing {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
