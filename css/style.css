@@ -20,9 +20,9 @@ header {
     align-items: center;
 }
 
-/* .nav_links li a:visited{
+.nav_links li a:visited{
     color:inherit
-} */
+}
 
 .card > header {
 
