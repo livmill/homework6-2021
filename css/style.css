@@ -103,7 +103,7 @@ header img {
     }
 }
 
-@media print/*screen and (min-width: 1200px)*/ {
+@media print {
     body {
         background-image: none;
         font-family: serif;
