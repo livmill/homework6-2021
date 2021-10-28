@@ -20,7 +20,8 @@ header {
     align-items: center;
 }
 
-.nav_links li a:visited{
+
+header li a:selected {
     color:inherit
 }
 
