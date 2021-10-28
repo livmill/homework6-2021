@@ -24,7 +24,6 @@ header {
 
 .card > header {
     display: flex;
-    flex-basis:0;
     background-color: #288088;
     border: 2px solid #45ADAD;
     padding: 20px 0px 20px 0px;
@@ -77,12 +76,6 @@ header img {
     }
 }
 
-@media (prefers-reduced-motion) {
-    #logo {
-        animation: none;
-    }
-}
-
 @media screen and (min-width: 850px){
     header {
         display: flex;
@@ -101,11 +94,16 @@ header img {
 
     .card {
         flex-basis: 250px;
-
     }
 }
 
-@media print {
+@media (prefers-reduced-motion) {
+    #logo {
+        animation: none;
+    }
+}
+
+@media print/*screen and (min-width: 1200px)*/ {
     body {
         background-image: none;
         font-family: serif;
@@ -117,7 +115,6 @@ header img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }
 
     nav {
@@ -128,15 +125,13 @@ header img {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
     }
 
     .pricing{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        align-items:flex-end;
-        
+        align-items: flex-end;
     }
         
     .card {
@@ -149,7 +144,12 @@ header img {
         display:none;
     }
 
-    .card > ul li::before {
+    .card > ul li:nth-child(odd):before {
         content: "👍";
       }
+
+    .card > ul li:nth-child(even):after {
+        content: "👍";
+    }
+
 }
